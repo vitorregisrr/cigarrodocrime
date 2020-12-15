@@ -10,15 +10,26 @@
 
     .scroll {
         position: absolute;
-        bottom: 20px;
+        bottom: 10px;
         transition: all 0.4s;
+        overflow: hidden;
 
+        @media screen and (max-width: $bp-MD){
+            right: 40px;
+            bottom: 0;
+        }
+        
         &:hover{
             margin-bottom: 15px;
         }
-
+        
         img {
             width: 34px;
+            
+            @media screen and (max-width: $bp-MD){
+                transform: translateY(70px);
+                width: 28px;
+            }
         }
     }
 
@@ -29,6 +40,12 @@
         height: 100vh;
         width: 100%;
         margin-top: -30px;
+
+        @media screen and (max-width: $bp-LG){
+            max-width: 400px;
+            margin:  0 auto;
+            padding-bottom: 140px;
+        }
        
         .caption {
             margin: 0 auto;
@@ -37,6 +54,10 @@
 
             .content{
                 transform: translateX(-80px);
+
+                @media screen and (max-width: $bp-LG){
+                    transform: none;
+                }
             }
 
             .title {
@@ -59,6 +80,11 @@
         justify-content: flex-end;
         width: 100%;
         margin-top: -130px;
+
+        @media screen and (max-width: $bp-LG){
+            margin-top: -40px;
+            justify-content: flex-start;
+        }
 
         .item {
             transition: all 0.4s;

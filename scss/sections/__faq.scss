@@ -3,9 +3,13 @@
     flex-direction: column;
 
     &__header {
-        padding-top: 4px;
-        padding-bottom: 13px;
+        padding-top: 30px;
+        padding-bottom: 23px;
         margin-bottom: 80px;
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 70px;
+        }
 
         .content {
             position: relative;
@@ -13,26 +17,56 @@
             justify-content: center;
             align-items: center;
             background-color: #fff;
-            .bar {
-                width: 67%;
 
+            .bar {
+                position: relative;
+                width: 65%;
+                overflow: hidden;
+                height: 17px;
+                margin-right: 21px;
+                margin-top: 6px;
+
+                
                 @media screen and (max-width: $bp-XL){
                     width: 63%;
+                    margin-right: 20px;
+                }
+                
+                @media screen and (max-width: $bp-LG){
+                    width: 40%;
+                    margin-right: 40px;
+                    margin-top: 0;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    margin-right: 20px;
+                    height: 20px;
                 }
 
                 img {
-                    width: 98%;
+                    position: absolute;
+                    top: 0;
+                    width: 700px;
+
+                    @media screen and (max-width: $bp-MD){
+                        width: 400px;
+                        margin-top: 3px;
+                    }
                 }
             }
 
             .title {
-                font-size: 132px;
+                font-size: 134px;
                 text-transform: uppercase;
                 color: #E5432F;
                 font-style: italic;
 
                 @media screen and (max-width: $bp-XL){
                     font-size: 113px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 70px;
                 }
             }
         }
@@ -70,6 +104,11 @@
         background-color: #fff;
         border: 1.6px solid $color-primary;
         padding: 28px 55px 7px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-left: 32px;
+        }
+
         &:not(:first-child) {
             border-top: none;
         }
@@ -85,6 +124,12 @@
             padding-right: 30px;
             text-align: left;
             padding-bottom: 20px;
+            width: 100%;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
 
             @media screen and (max-width: $bp-XL) {
                 font-size: 17px;
@@ -125,4 +170,9 @@
             font-family: 'Special Elite', cursive;
         }
     }
+}
+
+
+.animated{
+    animation-duration: 2s !important;
 }

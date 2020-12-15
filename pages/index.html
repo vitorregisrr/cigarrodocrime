@@ -108,24 +108,26 @@
 
         <main id="pagepiling">
 
-            <div class="section pp-scrollable">
+            <div class="section pp-scrollable" data-menuanchor="menu-faq">
                 <section id="faq" class="faq">
                     <div class="faq__header">
                         <div class="container">
                             <div class="content">
                                 <div class="bar">
-                                    <img src="../images/ico/traço-1.svg" alt="">
+                                    <div data-animation="slideRight" data-duration="2.4s" class="has-animation">
+                                        <img src="../images/ico/traço-1.svg" alt="">
+                                    </div>
                                 </div>
-                                <h2 class="title">
+                                <h2 class="title has-animation" data-delay="1.4s"  data-animation="fadeIn">
                                     Faq
                                 </h2>
                             </div>
                         </div>
                     </div>
 
-                    <div class="faq__body">
+                    <div class="faq__body has-animation">
                         <div class="container">
-                            <div class="content">
+                            <div class="content has-animation" data-animation="fadeIn">
 
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -465,10 +467,10 @@
                 </section>
             </div>
 
-            <div class="section pp-scrollable">
+            <div class="section pp-scrollable" data-menuanchor="menu-sobre">
                 <section id="sobre" class="sobre">
                     <div class="container">
-                        <a href="#" class="scroll wow showUp">
+                        <a href="#menu-faq" class="scroll has-animation" data-duration="3s" data-animation="showUp">
                             <img src="../images/ico/scroll-2.png" alt="">
                         </a>
 
@@ -476,8 +478,8 @@
                             <div class="w-100">
                                 <div class="caption">
                                     <div class="content">
-                                        <h3 class="title wow fadeInUp" data-wow-delay="0.2s">Sobre o FNCP</h3>
-                                        <p class="desc wow fadeInUp" data-wow-delay="0.3s">
+                                        <h3 class="title has-animation" data-animation="fadeInUp" data-duration="1s">Sobre o FNCP</h3>
+                                        <p class="desc has-animation"  data-animation="fadeInUp" data-duration="1.3s">
                                             O Fórum Nacional Contra a Pirataria e Ilegalidade (FNCP) é uma associação civil,
                                             sem fins lucrativos, formada em 2006 por entidades setoriais empresariais,
                                             empresas e sindicatos. É a maior associação brasileira com foco exclusivo no
@@ -485,7 +487,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="sobre__social wow fadeInRight">
+                                <div class="sobre__social has-animation" data-duration="1.2s" data-animation="fadeInRight">
                                     <a class="item" href="#">
                                         <img src="../images/ico/fb.svg" alt="">
                                     </a>

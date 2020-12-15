@@ -116,7 +116,26 @@
   display: flex;
   align-items: flex-end;
   animation-name: showUp;
-  animation-duration: 3s;
   overflow: hidden;
+}
 
+
+@keyframes slideRight {
+  from {
+    max-width: 0px;
+  }
+  
+  to {
+    max-width: 800px;
+  }
+}
+
+.slideRight {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  overflow: hidden;
+  height: 16px;
+  animation-name: slideRight;
 }
