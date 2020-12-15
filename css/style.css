@@ -47,11 +47,11 @@
 }
 
 .color-primary {
-  color: #161D38 !important;
+  color: #E5432F !important;
 }
 
 .color-secondary {
-  color: #B89F80 !important;
+  color: #707070 !important;
 }
 
 .bg-secondary {
@@ -182,6 +182,23 @@
   }
 }
 
+@keyframes showUp {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 800px;
+  }
+}
+
+.showUp {
+  display: flex;
+  align-items: flex-end;
+  animation-name: showUp;
+  animation-duration: 3s;
+  overflow: hidden;
+}
+
 a:visited, a:link, a:hover, a:active {
   text-decoration: none;
 }
@@ -237,7 +254,7 @@ b {
 
 .owl-carousel.nav-center .owl-nav button {
   position: absolute;
-  color: #161D38 !important;
+  color: #E5432F !important;
   font-size: 40px !important;
   width: 90px;
   height: 70px;
@@ -346,7 +363,7 @@ b {
 }
 
 .main-nav {
-  background-color: #161D38;
+  background-color: #E5432F;
   width: 100%;
   padding: 40px 0;
 }
@@ -372,7 +389,7 @@ b {
   right: 0;
   top: 17px;
   opacity: 0;
-  background-color: #B89F80;
+  background-color: #707070;
   padding: 53px 40px 48px 82px;
   width: 350px;
   transition: all 0.4s;
@@ -397,7 +414,7 @@ b {
 }
 
 .main-nav__links li {
-  color: #161D38;
+  color: #E5432F;
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 21px;
@@ -645,9 +662,9 @@ textarea.form-control {
 }
 
 .main-footer {
-  background-color: #161D38;
+  background-color: #E5432F;
   color: #fff;
-  color: #B89F80;
+  color: #707070;
   padding: 46px 0;
 }
 
@@ -669,77 +686,230 @@ textarea.form-control {
   }
 }
 
-.home-banner {
-  background-size: cover;
-  background-position: center center;
-  height: 700px;
-}
-
-@media screen and (max-width: 768px) {
-  .home-banner {
-    height: 560px;
-  }
-}
-
-.home-banner__caption {
+.sobre {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 130px;
-  padding-left: 70px;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 992px) {
-  .home-banner__caption {
-    padding-left: 40px;
-  }
+.sobre .container {
+  position: relative;
+  height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .home-banner__caption {
-    padding-left: 10px;
-  }
-}
-
-.home-banner__caption .title {
-  color: #fff;
-  font-size: 74px;
-  font-weight: lighter;
-  max-width: 600px;
-  margin-bottom: 90px;
-}
-
-@media screen and (max-width: 992px) {
-  .home-banner__caption .title {
-    font-size: 64px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .home-banner__caption .title {
-    font-size: 39px;
-    margin-bottom: 40px;
-  }
-}
-
-.home-banner__caption .more {
-  color: #161D38;
-  font-size: 17px;
-  font-weight: bold;
-  background-color: #B89F80;
-  padding: 10px 40px;
+.sobre .scroll {
+  position: absolute;
+  bottom: 40px;
   transition: all 0.4s;
-  display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
-  .home-banner__caption .more {
-    font-size: 15px;
+.sobre .scroll:hover {
+  margin-bottom: 15px;
+}
+
+.sobre .scroll img {
+  width: 32px;
+}
+
+.sobre__content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.sobre__content .caption {
+  margin: 0 auto;
+  max-width: 410px;
+  padding-bottom: 70px;
+}
+
+.sobre__content .caption .content {
+  transform: translateX(-80px);
+}
+
+.sobre__content .caption .title {
+  font-size: 50px;
+  color: #E5432F;
+  font-style: italic;
+  margin-bottom: 23px;
+}
+
+.sobre__content .caption .desc {
+  color: #707070;
+  font-size: 20px;
+  font-family: 'Special Elite', cursive;
+}
+
+.sobre__social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.sobre__social .item {
+  transition: all 0.4s;
+}
+
+.sobre__social .item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.sobre__social .item:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sobre__social .item img {
+  width: 38px;
+}
+
+.faq {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.faq__header {
+  padding-top: 4px;
+  padding-bottom: 13px;
+  margin-bottom: 80px;
+}
+
+.faq__header .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.faq__header .content .bar {
+  width: 67%;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq__header .content .bar {
+    width: 63%;
   }
 }
 
-.home-banner__caption .more:hover {
-  transform: scale(1.1);
+.faq__header .content .bar img {
+  width: 98%;
+}
+
+.faq__header .content .title {
+  font-size: 132px;
+  text-transform: uppercase;
+  color: #E5432F;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq__header .content .title {
+    font-size: 113px;
+  }
+}
+
+.faq__body {
+  background-color: black;
+  height: 100%;
+}
+
+.faq__body .content {
+  transform: translateY(-70px);
+  padding-bottom: 55px;
+  height: 600px;
+}
+
+.faq__body .content .simplebar-track {
+  position: absolute;
+  pointer-events: all;
+  right: -20px;
+}
+
+.faq__body .content .simplebar-scrollbar {
+  position: relative;
+  opacity: 1 !important;
+  visibility: inherit !important;
+  display: block !important;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.faq__body .content .simplebar-scrollbar::before {
+  background-color: #E5432F !important;
+}
+
+.faq__item {
+  background-color: #fff;
+  border: 1.6px solid #E5432F;
+  padding: 28px 55px 7px;
+}
+
+.faq__item:not(:first-child) {
+  border-top: none;
+}
+
+.faq__item .header {
+  position: relative;
+  background: none;
+  font-family: 'Special Elite', cursive;
+  border: none;
+  padding-left: 0;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 30px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq__item .header {
+    font-size: 17px;
+    padding-right: 40px;
+  }
+}
+
+.faq__item .header::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  right: -23px;
+  width: 36px;
+  height: 20px;
+  background-image: url("../../images/ico/setinha-bottom.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq__item .header::after {
+    width: 32px;
+    top: 25%;
+  }
+}
+
+.faq__item .header[aria-expanded="true"]:after {
+  transform: rotate(-180deg);
+}
+
+.faq__item .header:focus {
+  outline: none;
+}
+
+.faq__item .body {
+  font-family: 'Special Elite', cursive;
 }
 
 body {

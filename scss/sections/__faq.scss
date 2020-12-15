@@ -1,0 +1,132 @@
+.faq {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+
+    &__header {
+        padding-top: 4px;
+        padding-bottom: 13px;
+        margin-bottom: 80px;
+
+        .content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            .bar {
+                width: 67%;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 63%;
+                }
+
+                img {
+                    width: 98%;
+                }
+            }
+
+            .title {
+                font-size: 132px;
+                text-transform: uppercase;
+                color: #E5432F;
+                font-style: italic;
+
+                @media screen and (max-width: $bp-XL){
+                    font-size: 113px;
+                }
+            }
+        }
+    }
+
+    &__body {
+        background-color: black;
+        height: 100%;
+        
+        .content {
+            transform: translateY(-70px);
+            padding-bottom: 55px;
+            height: 600px;
+
+            .simplebar-track {
+                position: absolute;
+                pointer-events: all;
+                right: -20px;
+            }
+
+            .simplebar-scrollbar{
+                position: relative;
+                opacity: 1 !important;
+                visibility: inherit !important;
+                display: block !important;
+                cursor: pointer;
+                z-index: 10;
+
+                &::before{
+                    background-color: $color-primary !important;
+                }
+            }
+        }
+    }
+
+    &__item {
+        background-color: #fff;
+        border: 1.6px solid $color-primary;
+        padding: 28px 55px 7px;
+        &:not(:first-child) {
+            border-top: none;
+        }
+
+        .header {
+            position: relative;
+            background: none;
+            font-family: 'Special Elite', cursive;
+            border: none;
+            padding-left: 0;
+            font-size: 22px;
+            font-weight: bold;
+            padding-right: 30px;
+            text-align: left;
+            padding-bottom: 20px;
+
+            @media screen and (max-width: $bp-XL) {
+                font-size: 17px;
+                padding-right: 40px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 30%;
+                right: -23px;
+                width: 36px;
+                height: 20px;
+                background-image: url("../../images/ico/setinha-bottom.svg");
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: all 0.4s;
+
+                @media screen and (max-width: $bp-XL) {
+                    width: 32px;
+                    top: 25%;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                &:after {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .body {
+            font-family: 'Special Elite', cursive;
+        }
+    }
+}

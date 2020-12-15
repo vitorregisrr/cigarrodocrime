@@ -79,7 +79,6 @@
   }
 }
 
-
 .float{
   animation: float 6s infinite;
   
@@ -101,4 +100,23 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+@keyframes showUp {
+  from {
+    max-height: 0px;
+  }
+  
+  to {
+    max-height: 800px;
+  }
+}
+
+.showUp {
+  display: flex;
+  align-items: flex-end;
+  animation-name: showUp;
+  animation-duration: 3s;
+  overflow: hidden;
+
 }
