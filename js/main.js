@@ -5,13 +5,11 @@
     new WOW().init();
     $('.lazy').lazyload();
 
-    // CustomScrollbar
-    
-    scrollTopBtn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, '300');
+    $(document).ready(function () {
+        // pagepilling
+        $('#pagepiling').pagepiling({
+            sectionsColor: ['#fff', '#fff'],
+        });
     });
 
     window.dispatchEvent(new Event('resize'));

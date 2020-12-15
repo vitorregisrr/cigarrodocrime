@@ -690,8 +690,6 @@ textarea.form-control {
   display: flex;
   align-items: center;
   background-color: #fff;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .sobre .container {
@@ -701,7 +699,7 @@ textarea.form-control {
 
 .sobre .scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   transition: all 0.4s;
 }
 
@@ -710,7 +708,7 @@ textarea.form-control {
 }
 
 .sobre .scroll img {
-  width: 32px;
+  width: 34px;
 }
 
 .sobre__content {
@@ -719,6 +717,7 @@ textarea.form-control {
   justify-items: center;
   height: 100vh;
   width: 100%;
+  margin-top: -30px;
 }
 
 .sobre__content .caption {
@@ -748,7 +747,7 @@ textarea.form-control {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  margin-top: -80px;
+  margin-top: -130px;
 }
 
 .sobre__social .item {
@@ -773,9 +772,7 @@ textarea.form-control {
 
 .faq {
   display: flex;
-  height: 100vh;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .faq__header {
@@ -821,13 +818,11 @@ textarea.form-control {
 
 .faq__body {
   background-color: black;
-  height: 100%;
 }
 
 .faq__body .content {
   transform: translateY(-70px);
-  padding-bottom: 55px;
-  height: 600px;
+  padding-bottom: 35px;
 }
 
 .faq__body .content .simplebar-track {
@@ -921,6 +916,12 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+}
+
+#pp-nav {
+  display: none !important;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

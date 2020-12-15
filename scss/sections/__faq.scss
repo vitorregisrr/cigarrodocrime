@@ -1,8 +1,6 @@
 .faq {
     display: flex;
-    height: 100vh;
     flex-direction: column;
-    overflow: hidden;
 
     &__header {
         padding-top: 4px;
@@ -42,12 +40,10 @@
 
     &__body {
         background-color: black;
-        height: 100%;
         
         .content {
             transform: translateY(-70px);
-            padding-bottom: 55px;
-            height: 600px;
+            padding-bottom: 35px;
 
             .simplebar-track {
                 position: absolute;
