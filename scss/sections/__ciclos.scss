@@ -230,15 +230,16 @@
                 .number{
                     position: absolute;
                     top: 15px;
-                    left: -65px;
+                    left: -138px;
                     background-color: black;
                     color: $color-primary;
                     font-size: 90px;
-                    padding: 0 6px;
-
+                    padding: 0 20px;
+                    
                     @media screen and (max-width: $bp-SM){
                         font-size: 53px;
-                        
+                        left: -65px;
+                        padding: 0 6px;
                     }
 
                 }

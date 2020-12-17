@@ -2564,16 +2564,18 @@ textarea.form-control {
 .ciclos__carousel-item .caption .number {
   position: absolute;
   top: 15px;
-  left: -65px;
+  left: -138px;
   background-color: black;
   color: #E5432F;
   font-size: 90px;
-  padding: 0 6px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 576px) {
   .ciclos__carousel-item .caption .number {
     font-size: 53px;
+    left: -65px;
+    padding: 0 6px;
   }
 }
 
