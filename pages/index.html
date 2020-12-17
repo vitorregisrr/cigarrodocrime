@@ -113,12 +113,17 @@
                 data-menuanchor="menu-home"
                 style="max-width: 100vw; overflow-x: hidden;">
                 <section id="home" class="home">
-                    <div class="banner has-animation animated zoomIn" style="animation-duration: 1s !important;" data-animation="zoomIn" data-duration="1s">
+                    <div
+                        class="banner has-animation animated zoomIn"
+                        style="animation-duration: 1s !important;"
+                        data-animation="zoomIn"
+                        data-duration="1s">
                         <img src="../images/thumb/banner-home.png" alt="">
                     </div>
                     <a
                         href="#menu-barato"
-                        class="scroll has-animation animated showUp" style="animation-duration: 6s !important;"
+                        class="scroll has-animation animated showUp"
+                        style="animation-duration: 6s !important;"
                         data-duration="6s"
                         data-animation="showUp">
                         <img src="../images/ico/scroll-4.png" alt="">
@@ -451,7 +456,8 @@
                                     <p class="desc">
                                         Como o paraguai se tornou um produtor tão grande de cigarros?
                                     </p>
-                                    <button class="more">
+                                    <button class="more" data-toggle="ep-modal"
+                                    data-target="#ep-modal-1">
                                         <div class="text">
                                             Veja mais
                                         </div>
@@ -480,7 +486,8 @@
                                     <p class="desc" style="max-width: 230px;">
                                         Como o cigarro do crime chega ao Brasil?
                                     </p>
-                                    <button class="more">
+                                    <button class="more" data-toggle="ep-modal"
+                                    data-target="#ep-modal-2">
                                         <div class="text">
                                             Veja mais
                                         </div>
@@ -509,7 +516,8 @@
                                     <p class="desc">
                                         Quem são os personagens que fazem ciclo desse ciclo criminoso?
                                     </p>
-                                    <button class="more">
+                                    <button class="more" data-toggle="ep-modal"
+                                    data-target="#ep-modal-3">
                                         <div class="text">
                                             Veja mais
                                         </div>
@@ -538,7 +546,8 @@
                                     <p class="desc">
                                         Como acabar com o contrabando de cigarros no Brasil?
                                     </p>
-                                    <button class="more">
+                                    <button class="more" data-toggle="ep-modal"
+                                    data-target="#ep-modal-4">
                                         <div class="text">
                                             Veja mais
                                         </div>
@@ -1135,5 +1144,191 @@
             </section>
         </div>
     </main>
+
+    <!-- MODALS -->
+    <div class="ep-modal" id="ep-modal-1" data-visible="false">
+        <button
+            class="close"
+            data-toggle="ep-modal"
+            data-target="#ep-modal-1"
+            title="fechar">
+        <img src="../images/ico/close.png" alt=""></button>
+
+        <div class="body-spacing">
+            <div class="body">
+                <div class="header">
+                    <h3 class="title">
+                        Episódio 1:
+                        <span class="color-primary">Paraguai</span>
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="content">
+                            <h4 class="title">
+                                Como o cigarro do crime chega ao Brasil?
+                            </h4>
+                            <div class="desc">
+                                <p>A cena de sacoleiros atravessando a ponte da amizade e carros de passeio com
+                                    o produto escondido ficou no passado. Operado por grandes organizações
+                                    criminosas, o contrabando de cigarros tem, hoje, a mesma importância econômica
+                                    do tráfico de cocaína. O trabalho intensivo das Polícias, Receita Federal,
+                                    Ministério da Justiça e Segurança Pública avança e faz com que o país alcance
+                                    vitórias expressivas no enfrentamento ao crime organizado. Mas serão elas
+                                    suficientes?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a
+                            href="#"
+                            class="ep-modal__img has-animation"
+                            data-animation="zoomIn"
+                            data-delay="0.2s"
+                            data-duration="1.4s">
+                            <img src="../images/thumb/banner-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ep-modal" id="ep-modal-2" data-visible="false">
+        <button
+            class="close"
+            data-toggle="ep-modal"
+            data-target="#ep-modal-2"
+            title="fechar">
+        <img src="../images/ico/close.png" alt=""></button>
+
+        <div class="body-spacing">
+            <div class="body">
+                <div class="header">
+                    <h3 class="title">
+                        Episódio 2:
+                        <span class="color-primary">Fronteira</span>
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="content">
+                            <h4 class="title">
+                                Como o cigarro do crime chega ao Brasil?
+                            </h4>
+                            <div class="desc">
+                                <p>A cena de sacoleiros atravessando a ponte da amizade e carros de passeio com
+                                    o produto escondido ficou no passado. Operado por grandes organizações
+                                    criminosas, o contrabando de cigarros tem, hoje, a mesma importância econômica
+                                    do tráfico de cocaína. O trabalho intensivo das Polícias, Receita Federal,
+                                    Ministério da Justiça e Segurança Pública avança e faz com que o país alcance
+                                    vitórias expressivas no enfrentamento ao crime organizado. Mas serão elas
+                                    suficientes?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a
+                            href="#"
+                            class="ep-modal__img has-animation"
+                            data-animation="zoomIn"
+                            data-delay="0.2s"
+                            data-duration="1.4s">
+                            <img src="../images/thumb/banner-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ep-modal" id="ep-modal-3" data-visible="false">
+        <button
+            class="close"
+            data-toggle="ep-modal"
+            data-target="#ep-modal-3"
+            title="fechar">
+        <img src="../images/ico/close.png" alt=""></button>
+
+        <div class="body-spacing">
+            <div class="body">
+                <div class="header">
+                    <h3 class="title">
+                        Episódio 3:
+                        <span class="color-primary">Crime</span>
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="content">
+                            <h4 class="title" style="max-width: 465px;">
+                                Quem são os personagens que fazem parte desse ciclo criminoso?
+                            </h4>
+                            <div class="desc" style="max-width: 465px;">
+                                <p>O mercado de cigarros ilegais não é nada pequeno. Com a travessia ilegal do cigarro paraguaio, o crime vem junto, envolvendo ex-chefes de estado, sonegação de impostos, suborno das polícias, e o financiamento de facções criminosas e milícias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a
+                            href="#"
+                            class="ep-modal__img has-animation"
+                            data-animation="zoomIn"
+                            data-delay="0.2s"
+                            data-duration="1.4s">
+                            <img src="../images/thumb/banner-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ep-modal" id="ep-modal-4" data-visible="false">
+        <button
+            class="close"
+            data-toggle="ep-modal"
+            data-target="#ep-modal-4"
+            title="fechar">
+        <img src="../images/ico/close.png" alt=""></button>
+
+        <div class="body-spacing">
+            <div class="body">
+                <div class="header">
+                    <h3 class="title">
+                        Episódio 4:
+                        <span class="color-primary">Soluções</span>
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="content" >
+                            <h4 class="title" style="max-width: 400px;">
+                                Como acabar com o contrabando de cigarros no Brasil?
+                            </h4>
+                            <div class="desc" style="max-width: 400px;">
+                                <p>Este talvez seja o episódio mais importante dessa série, pois trata das soluções, das medidas que dependem, sim, do governo brasileiro, mas que contam também com a conscientização e a luta de cada cidadão.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a
+                            href="#"
+                            class="ep-modal__img has-animation"
+                            data-animation="zoomIn"
+                            data-delay="0.2s"
+                            data-duration="1.4s">
+                            <img src="../images/thumb/banner-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
