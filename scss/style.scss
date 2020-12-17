@@ -5,14 +5,13 @@
 @import './mixins/__all';
 
 // Import Utils //
-@import  './util/__all';
+@import './util/__all';
 
 // Import Components //
 @import './components/__all';
 
 // Import Sections //
 @import './sections/__all';
-
 
 body {
     position: relative;
@@ -27,6 +26,40 @@ body {
     height: 100vh;
 }
 
-#pp-nav{
-    display: none !important;
+#pp-nav {
+    position: fixed;
+    z-index: 14;
+    background-color: $color-primary;
+    padding: 8px 0px 10px 2px;
+    transform: translateY(-10%);
+    box-shadow: -4px 3px black;
+    animation: fadeInRight 1s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    opacity: .8;
+    transition: opacity 0.4s;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    li {
+        a {
+
+            span{
+                border-color: #fff !important;
+                border-width: 1.3px;
+                width: 8px;
+                height: 8px;
+            }
+
+            &.active {
+                span {
+                    background-color: #fff;
+                    @include transition();
+                }
+            }
+        }
+    }
 }

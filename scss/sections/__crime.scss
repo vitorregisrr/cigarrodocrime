@@ -1,0 +1,71 @@
+.crime{
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100vw;
+        height: 7px;
+        background-color: $color-primary;
+    }
+    
+    .container{
+        min-height: 100vh;
+        padding-left: 70px;
+    }
+    
+    .scroll {
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+        z-index: 8;
+        @include transition();
+        
+        &:hover {
+            bottom: 30px;
+        }
+        
+        img {
+            width: 23px;
+        }
+    }
+    
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: right;
+        padding-left: 10px;
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        padding-bottom: 93px;
+
+        .content{
+            max-width: 605px;
+        }
+
+        .title{
+            font-size: 50px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            color: $color-primary;
+            max-width: 1000px;
+        }
+
+        .desc{
+            font-family: 'Special Elite', cursive;
+            font-size: 20px;
+            color: #fff;
+            padding-left: 30px;
+            padding-top: 17px;
+        }
+    }
+}

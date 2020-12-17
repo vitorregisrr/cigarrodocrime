@@ -1,0 +1,76 @@
+.contrabando{
+    position: relative;
+    background-color: #F8F8F8;
+
+    .scroll {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        @include transition();
+
+        &:hover {
+            bottom: 30px;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-bottom: 260px;
+
+        .caption{
+            position: relative;
+        }
+
+        .title{
+            font-style: italic;
+            text-align: center;
+            text-transform: uppercase;
+            
+            .sm{
+                font-size: 71px;
+                color: #0F0F0F;
+                text-shadow: -3.4px 3px 0px $color-primary;
+                padding-left: 103px;
+            }
+
+            .lg{
+                display: block;
+                font-weight: 800;
+                color: $color-primary;
+                font-size: 179px;
+                text-shadow: none;
+                margin-top: -40px;
+            }
+        }
+
+        .desc{
+            position: absolute;
+            right: 160px;
+            bottom: -105px;
+            font-family: 'Special Elite', cursive;
+            font-size: 20px;
+            color: #646464;
+            max-width: 660px;
+            text-align: right;
+
+        }
+
+    }
+    
+    .subtitle{
+        position: absolute;
+        bottom: 100px;
+        left: 12%;
+        font-weight: 800;
+        font-size: 38px;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+}

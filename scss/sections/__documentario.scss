@@ -1,0 +1,81 @@
+.documentario{
+    position: relative;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100vw;
+        height: 7px;
+        background-color: $color-primary;
+    }
+    
+    .container{
+        min-height: 100vh;
+        padding-left: 70px;
+    }
+    
+    .scroll {
+        position: absolute;
+        bottom: 20px;
+        left: -40px;
+        z-index: 8;
+        @include transition();
+        
+        &:hover {
+            bottom: 30px;
+        }
+        
+        img {
+            width: 20px;
+        }
+    }
+    
+    &__header{
+        padding-top: 100px;
+        margin-bottom: 50px;
+
+        .title{
+            font-size: 45px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            color: $color-primary;
+            max-width: 1000px;
+        }
+    }
+
+    &__body{
+        padding-left: 10px;
+
+        .desc{
+            font-family: 'Special Elite', cursive;
+            font-size: 20px;
+            max-width: 425px;
+        }
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 92%;
+        margin: 0 auto;
+        border: 1px solid $color-primary;
+        padding: 26px;
+        @include transition();
+
+        &:hover{
+            padding: 17px;
+            @include scale(1.04);
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
