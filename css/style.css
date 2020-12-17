@@ -903,6 +903,7 @@ textarea.form-control {
 .home {
   position: relative;
   z-index: 15;
+  height: 100vh;
 }
 
 @media screen and (max-width: 576px) {
@@ -963,7 +964,7 @@ textarea.form-control {
 .home .banner {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
