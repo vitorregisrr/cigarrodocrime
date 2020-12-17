@@ -33,6 +33,11 @@
         $.fn.pagepiling.setAllowScrolling(true);
     });
 
+
+    $('.episodios__tabs-item').click(function(){
+        $(this).siblings().removeClass('active');
+    })
+
     window.dispatchEvent(new Event('resize'));
 
 })();

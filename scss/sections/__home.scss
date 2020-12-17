@@ -8,12 +8,20 @@
         left: 61.8%;
         @include transition();
 
+        @media screen and (max-width: 768px){
+            left: 47%;
+        }
+
         &:hover {
             bottom: 30px;
         }
 
         img {
             width: 25px;
+
+            @media screen and (max-width: 768px){
+                width: 19.6px;
+            }
         }
     }
 

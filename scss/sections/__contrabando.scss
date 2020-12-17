@@ -12,8 +12,16 @@
             bottom: 30px;
         }
 
+        @media screen and (max-width: 768px){
+            left: 20px;
+        }
+
         img {
             width: 20px;
+
+            @media screen and (max-width: 768px){
+                width: 24px;
+            }
         }
     }
 
@@ -23,6 +31,10 @@
         align-items: center;
         height: 100vh;
         padding-bottom: 260px;
+
+        @media screen and (max-width: 768px){
+            padding-bottom: 580px;
+        }
 
         .caption{
             position: relative;
@@ -38,6 +50,33 @@
                 color: #0F0F0F;
                 text-shadow: -3.4px 3px 0px $color-primary;
                 padding-left: 103px;
+
+                @media screen and (max-width: 1400px){
+                    font-size: 61px;
+                }
+
+                @media screen and (max-width: 1260px){
+                    font-size: 56px;
+                }
+
+                @media screen and (max-width: 980px){
+                    font-size: 50px;
+                }
+
+                @media screen and (max-width: 920px){
+                    font-size: 40px;
+                }
+
+                @media screen and (max-width: 768px){
+                    display: block;
+                    font-size: 65px;
+                    max-width: 700px;
+                    text-align: left;
+                    margin-bottom: 15px;
+                    margin-left: -32px;
+                    line-height: 1;
+                    text-shadow: -4.4px 5px 0px $color-primary;
+                }
             }
 
             .lg{
@@ -47,6 +86,29 @@
                 font-size: 179px;
                 text-shadow: none;
                 margin-top: -40px;
+                
+
+                @media screen and (max-width: 1400px){
+                    font-size: 160px;
+                }
+
+                @media screen and (max-width: 1260px){
+                    font-size: 140px;
+                    margin-top: -30px;
+                }
+
+                @media screen and (max-width: 1080px){
+                    font-size: 120px;
+                }
+
+                @media screen and (max-width: 920px){
+                    font-size: 100px;
+                    margin-top: -24px;
+                }
+
+                @media screen and (max-width: 768px){
+                    font-size: 98px;
+                }
             }
         }
 
@@ -60,6 +122,18 @@
             max-width: 660px;
             text-align: right;
 
+            @media screen and (max-width: 920px){
+                right: 50px;
+                font-size: 18px;
+                max-width: 500px;
+            }
+
+            @media screen and (max-width: 768px){
+                font-size: 32px;
+                bottom: -390px;
+                max-width: 430px;
+            }
+
         }
 
     }
@@ -72,5 +146,11 @@
         font-size: 38px;
         text-transform: uppercase;
         color: $color-primary;
+
+        @media screen and (max-width: 768px){
+            font-size: 38px;
+            left: 22%;
+            bottom: 130px;
+        }
     }
 }

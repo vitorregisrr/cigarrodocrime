@@ -17,6 +17,15 @@
         onChange: function(e){
 
         },
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            769: {
+                items: 2
+            }
+        }
     });
 
     const ciclosCarousel = $("#ciclos-carousel");

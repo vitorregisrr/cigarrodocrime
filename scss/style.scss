@@ -39,12 +39,19 @@ body {
     animation-fill-mode: forwards;
     opacity: .8;
     transition: opacity 0.4s;
+    
+    @media screen and (max-width: 768px){
+        opacity: 0 !important;
+        display: none !important;
+    }
 
     &:hover{
         opacity: 1;
     }
 
     li {
+        margin: 4px;
+
         a {
 
             span{
@@ -52,6 +59,11 @@ body {
                 border-width: 1.3px;
                 width: 8px;
                 height: 8px;
+                
+                @media screen and (max-width: 1080px){
+                    width: 7px;
+                    height: 7px;
+                }
             }
 
             &.active {

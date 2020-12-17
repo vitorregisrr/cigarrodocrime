@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
 
+    .container{
+        @media screen and (max-width: 768px){
+            max-width: 600px !important;
+            padding: 0 !important;
+        }
+    }
+
     &__header {
         padding-top: 30px;
         padding-bottom: 23px;
@@ -49,7 +56,7 @@
                     width: 700px;
 
                     @media screen and (max-width: $bp-MD){
-                        width: 400px;
+                        width: 500px;
                         margin-top: 3px;
                     }
                 }
@@ -66,7 +73,7 @@
                 }
 
                 @media screen and (max-width: $bp-MD){
-                    font-size: 70px;
+                    font-size: 90px;
                 }
             }
         }
@@ -152,6 +159,10 @@
                 @media screen and (max-width: $bp-XL) {
                     width: 32px;
                     top: 25%;
+                }
+
+                @media screen and (max-width: 768px){
+                    top: 8%;
                 }
             }
 

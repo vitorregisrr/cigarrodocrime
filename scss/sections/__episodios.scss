@@ -24,10 +24,19 @@
         height: 840px;
         padding-top: 60px;
 
+        @media screen and (max-width: 768px){
+           height: auto;
+           padding-top: 0;
+        }
+
         .banner {
             position: absolute;
             z-index: -1;
             width: 1200px;
+
+            @media screen and (max-width: 768px){
+                width: 510px;
+            }
         }
 
         .container {
@@ -42,17 +51,30 @@
             left: 30px;
             @include transition();
 
+            @media screen and (max-width: 768px){
+                left: 20px;
+                bottom: -110px;
+            }
+
             &:hover {
                 bottom: 0px;
             }
 
             img {
                 width: 40px;
+
+                @media screen and (max-width: 768px){
+                    width: 47px;
+                }
             }
         }
     }
 
     &__tabs {
+        
+        @media screen and (max-width: 768px){
+            padding-left: 100px;
+        }
 
         &-item {
             position: absolute;
@@ -62,6 +84,28 @@
             border: 1.8px solid black;
             transition: all 0.4s;
             padding-left: 40px;
+
+            @media screen and (max-width: 768px){
+                width: 100%;
+                position: relative;
+                bottom: unset;
+                left: unset !important;
+                right: unset !important;
+                height: auto !important;
+                max-height: 120px !important;
+                border-width: 0.5px;
+
+                &:hover, &.active{
+                    max-height: 1000px !important;
+                    min-height: 400px !important;
+                }
+            }
+
+            &:last-child{
+                @media screen and (max-width: 768px){
+                    max-height: 400px !important;
+                }
+            }
 
             &:first-child{
                 left: 180px;
@@ -100,7 +144,7 @@
                 }
             }
 
-            &:hover{
+            &:hover, &.active{
                 background-color: $color-primary;
 
                 .body{
@@ -136,6 +180,10 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     @include transition();
+
+                    @media screen and (max-width: 768px){
+                        font-size: 33px;
+                    }
                     
                     span{
                         color: $color-primary;
@@ -156,6 +204,11 @@
                     letter-spacing: 0.4px;
                     max-width: 350px;
                     margin: 12px 0;
+
+                    @media screen and (max-width: 768px){
+                        font-size: 22px;
+                        max-width: 300px !important;
+                    }
                 }
 
                 .more {
@@ -172,6 +225,11 @@
                     padding: 6px 20px;
                     color: #fff;
                     transition: all 0.4s;
+
+                    @media screen and (max-width: 768px){
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
     
                     &:hover {
                         background-color: #fff;
@@ -223,6 +281,11 @@
         overflow-x: hidden;
         height: 454px;
 
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            height: auto;
+        }
+
         .header {
             display: flex;
             justify-content: flex-end;
@@ -231,11 +294,23 @@
             width: 30%;
             height: 100%;
 
+            @media screen and (max-width: 768px){
+                width: 100%;
+                justify-content: flex-start;
+                padding: 50px 0;
+                padding-bottom: 30px;
+                padding-left: 60px;
+            }
+
             .title {
                 font-family: 'Special Elite', cursive;
                 font-size: 48px;
                 color: #fff;
                 padding-right: 35px;
+
+                @media screen and (max-width: 768px){
+                    font-size: 64px;
+                }
             }
         }
 
@@ -245,10 +320,18 @@
             height: 100%;
             padding-left: 60px;
             padding-top: 72px;
+
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
         }
 
         &-carousel {
             width: 100%;
+
+            @media screen and (max-width: 768px){
+                padding-bottom: 30px;
+            }
         }
 
         &-item {
@@ -312,6 +395,11 @@
             .title {
                 font-size: 20px;
                 color: #fff;
+
+                @media screen and (max-width: 768px){
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                }
             }
 
             .desc {
@@ -319,6 +407,13 @@
                 color: #fff;
                 font-size: 20px;
                 max-width: 390px;
+
+                
+                @media screen and (max-width: 768px){
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                    max-width: 430px;
+                }
             }
         }
 
@@ -326,6 +421,10 @@
             display: flex;
             justify-content: flex-start;
             margin-top: 15px;
+
+            @media screen and (max-width: 768px){
+                margin-top: 20px;
+            }
         }
 
         .custom-nav {
@@ -335,6 +434,11 @@
             margin-left: auto;
             margin-right: 200px;
             margin-bottom: 80px;
+
+            @media screen and (max-width: 768px){
+                justify-content: flex-start;
+                margin-bottom: 80px;
+            }
 
             .bar {
                 margin: 0 30px;
