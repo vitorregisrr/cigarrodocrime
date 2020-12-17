@@ -91,8 +91,10 @@
             padding-top: 25px;
             padding-bottom: 9px;
             padding-right: 20px;
+            min-width: 380px;
 
             .title{
+                font-size: 30px;
                 font-weight: bold;
                 color: #fff;
                 text-transform: uppercase;
@@ -136,6 +138,16 @@
         padding: 26px;
         margin-top: 165px;
         transform: translateX(-160px);
+
+        @media screen and (max-width: 1500px){
+            width: 95%;
+            transform: translateX(-100px);
+        }
+
+        @media screen and (max-width: 1300px){
+            width: 90%;
+            transform: translateX(-30px);
+        }
         
         &:hover{
             

@@ -822,9 +822,11 @@ textarea.form-control {
   padding-top: 25px;
   padding-bottom: 9px;
   padding-right: 20px;
+  min-width: 380px;
 }
 
 .ep-modal .body .header .title {
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -865,6 +867,20 @@ textarea.form-control {
   padding: 26px;
   margin-top: 165px;
   transform: translateX(-160px);
+}
+
+@media screen and (max-width: 1500px) {
+  .ep-modal__img {
+    width: 95%;
+    transform: translateX(-100px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .ep-modal__img {
+    width: 90%;
+    transform: translateX(-30px);
+  }
 }
 
 .ep-modal__img:hover img {
