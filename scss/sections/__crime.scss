@@ -16,6 +16,12 @@
     .container{
         min-height: 100vh;
         padding-left: 70px;
+
+        @media screen and (max-width: $bp-SM){
+            padding-left: 40px;
+            padding-right: 30px;
+        }
+        
     }
     
     .scroll {
@@ -28,6 +34,12 @@
         @media screen and (max-width: 768px){
             left: 50px;
         }
+
+        @media screen and (max-width: $bp-SM){
+            left: 40px;
+            bottom: 16px;
+        }
+        
         
         &:hover {
             bottom: 30px;
@@ -39,6 +51,11 @@
             @media screen and (max-width: 768px){
                 width: 27px;
             }
+
+            @media screen and (max-width: $bp-SM){
+                width: 17px;
+            }
+
         }
     }
     
@@ -59,8 +76,21 @@
             padding-bottom: 250px;
         }
 
+        @media screen and (max-width: $bp-SM){
+            padding-bottom: 90px;
+        }
+
         .content{
             max-width: 605px;
+
+            @media screen and (max-width: $bp-SM){
+                max-width: 800px;
+            }
+
+            @media screen and (max-width: $bp-SM) and (max-height: 800px){
+             
+            }
+
         }
 
         .title{
@@ -70,6 +100,17 @@
             text-transform: uppercase;
             color: $color-primary;
             max-width: 1000px;
+
+            @media screen and (max-width: $bp-SM){
+                font-size: 30px;
+                padding-top: 0px;
+            }
+            
+            @media screen and (max-width: $bp-SM) and (max-height: 800px){
+                font-size: 27px;
+                max-width: 3590px;
+                padding-top: 30px;
+            }
         }
         
         .desc{
@@ -82,6 +123,16 @@
             @media screen and (max-width: 768px){
                 max-width: 500px;
                 margin-left: auto;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                max-width: 280px;
+                font-size: 19px;
+            }
+
+            @media screen and (max-width: $bp-SM) and (max-height: 800px){
+                font-size: 17px;
+                max-width: 260px;
             }
         }
     }

@@ -15,6 +15,24 @@
             height: 1px;
             opacity: .7;
         }
+
+        @media screen and (max-width: $bp-SM){
+           top: 312px;
+        }
+
+    }
+
+    &::before{
+        content: '';
+        
+        @media screen and (max-width: 768px){
+            position: absolute;
+            top: 40px;
+            width: 100vw;
+            height: 8px;
+            opacity: 1;
+            background-color: $color-primary;
+        }
     }
 
     .textura {
@@ -39,11 +57,15 @@
         bottom: 20px;
         left: 8vw;
         z-index: 13;
-
         @include transition();
 
         &:hover {
             bottom: 30px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            left: 15vw;
+            bottom: 10px;
         }
 
         img {
@@ -52,7 +74,12 @@
             @media screen and (max-width: 768px){
                 width: 23px;
             }
+
+            @media screen and (max-width: $bp-SM){
+                width: 15px;
+            }
         }
+        
     }
 
     &__header{
@@ -66,6 +93,18 @@
             font-size: 52px;
             max-width: 680px;
             text-transform: uppercase;
+
+            @media screen and (max-width: $bp-SM){
+                font-size: 31px;
+                max-width: 310px;
+                padding-top: 26px;
+                padding-left: 20px;
+            }
+            
+            @media screen and (max-width: $bp-SM) and (max-height: 800px){
+                font-size: 31px;
+                max-width: 280px;
+            }
         }
     }
 
@@ -84,6 +123,17 @@
 
             @media screen and (max-width: 768px){
                 width: 97%;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                top: 126px;
+                margin-left: -2%;
+            }
+
+            img{
+                @media screen and (max-width: $bp-SM){
+                    width: 30px;
+                }
             }
 
             .owl-prev, .owl-next{
@@ -138,11 +188,22 @@
                     padding-left: 205px;
                 }
 
+                @media screen and (max-width: $bp-SM){
+                    padding-left: 110px;
+                    padding-top: 80px;
+                }
+
                 .title{
                     position: relative;
                     color: #F8F8F8;
                     font-size: 60px;
                     margin-bottom: 33px;
+
+                    @media screen and (max-width: $bp-SM){
+                        font-size: 40px;
+                        padding-top: 16px;
+                    }
+
                 }
 
                 .desc{
@@ -154,16 +215,28 @@
                     @media screen and (max-width: 768px){
                         font-size: 20px;
                     }
+
+                    @media screen and (max-width: $bp-SM){
+                        font-size: 17px;
+                        max-width: 200px;
+                        margin-top: -15px;
+                    }
                 }
 
                 .number{
                     position: absolute;
                     top: 15px;
-                    left: -130px;
+                    left: -65px;
                     background-color: black;
                     color: $color-primary;
                     font-size: 90px;
-                    padding: 0 20px;
+                    padding: 0 6px;
+
+                    @media screen and (max-width: $bp-SM){
+                        font-size: 53px;
+                        
+                    }
+
                 }
             }
 
@@ -176,6 +249,10 @@
                     height: 420px;
                 }
                
+                @media screen and (max-width: $bp-SM){
+                    height: 230px;
+                }
+
                 img{
                     position: absolute;
                     right: 17px;
@@ -185,9 +262,14 @@
 
                     @media screen and (max-width: 768px){
                         top: unset;
-                        bottom: -30px;
+                        bottom: 0px;
                         right: 0;
                     }
+
+                    @media screen and (max-width: $bp-SM){
+                        width: 200px;
+                    }
+
                 }
             }
         }

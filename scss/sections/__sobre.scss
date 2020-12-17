@@ -27,6 +27,10 @@
             @media screen and (max-width: 768px){
                 width: 48px;
             }
+
+            @media screen and (max-width: $bp-MD){
+                width: 30px;
+            }
         }
     }
 
@@ -44,6 +48,10 @@
             margin:  0 auto;
             padding-bottom: 140px;
             padding-left: 100px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            padding-bottom: 40px;
         }
        
         .caption {
@@ -67,12 +75,25 @@
                 color: $color-primary;
                 font-style: italic;
                 margin-bottom: 23px;
+
+                @media screen and (max-width: $bp-SM){
+                    margin-left: -80px;
+                    margin-bottom: 30px;
+                    padding-top: 20px;
+                    font-size: 43px;
+                }
             }
 
             .desc {
                 color: $color-secondary;
                 font-size: 20px;
                 font-family: 'Special Elite', cursive;
+
+                @media screen and (max-width: $bp-SM){
+                    font-size: 16px;
+                    max-width: 180px;
+                    margin-right: -20px;
+                }
             }
         }
     }
@@ -89,6 +110,10 @@
             padding-left: 40px;
         }
 
+        @media screen and (max-width: $bp-SM){
+            padding-left: 0;
+        }
+
         .item {
             transition: all 0.4s;
 
@@ -102,6 +127,10 @@
 
             img {
                 width: 38px;
+
+                @media screen and (max-width: $bp-SM){
+                    width: 30px;
+                }
             }
         }
     }

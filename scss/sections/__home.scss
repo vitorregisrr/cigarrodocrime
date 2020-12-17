@@ -12,6 +12,10 @@
             left: 47%;
         }
 
+        @media screen and (max-width: $bp-MD){
+            left: 38%;
+        }
+
         &:hover {
             bottom: 30px;
         }
@@ -21,6 +25,14 @@
 
             @media screen and (max-width: 768px){
                 width: 19.6px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                width: 18px;
+            }
+
+            @media screen and (max-width: $bp-SM) and (max-height: 810px){
+                width: 14px;
             }
         }
     }
