@@ -4,7 +4,7 @@
     background-color: black;
 
     @media screen and (max-width: $bp-SM){
-        padding-bottom: 100px;
+        min-height: calc(100vh - 110px);
     }
 
     &::after{
@@ -33,7 +33,7 @@
             height: 100vh;
         }
     }
-    
+
     .container{
         min-height: 100vh;
         padding-left: 70px;
@@ -41,6 +41,11 @@
         @media screen and (max-width: $bp-SM){
             padding-left: 40px;
             padding-right: 30px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            min-height: calc(100vh - 110px);
+            height: calc(100vh - 110px) !important;
         }
         
     }
@@ -98,7 +103,8 @@
         }
 
         @media screen and (max-width: $bp-SM){
-            padding-bottom: 90px;
+            padding-bottom: 0px;
+            padding-top: 60px;
         }
 
         .content{
@@ -130,7 +136,6 @@
             @media screen and (max-width: $bp-SM) and (max-height: 800px){
                 font-size: 27px;
                 max-width: 3590px;
-                padding-top: 30px;
             }
         }
         
