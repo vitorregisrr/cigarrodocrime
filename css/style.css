@@ -2532,7 +2532,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .ciclos .scroll {
     left: 15vw;
-    bottom: 10px;
+    bottom: 30px;
   }
 }
 
