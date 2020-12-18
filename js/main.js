@@ -10,7 +10,7 @@
         $('#pagepiling').pagepiling({
             sectionsColor: ['#000', '#fff', '#000', '#fff', '#F8F8F8', '#000', '#F8F8F8', '#000', '#fff', '#fff'],
             scrollBar: true,
-            // normalScrollElements: ['#ciclos-carousel', '#midias-carousel'],
+            normalScrollElements: ['#ciclos-carousel, #midias-carousel'],
             anchors: ['menu-home', 'menu-barato', 'menu-crime', 'menu-numeros', 'menu-documentario', 'menu-ciclo', 'menu-contrabando', 'menu-episodios', 'menu-faq', 'menu-sobre'],
             onLeave: function(anchorLink, index){
                 $(`#pagepiling > .section:nth-child(${index}) .has-animation`).each(function( index, element ) {
@@ -38,7 +38,7 @@
                 }
             }
         });
-        $.fn.pagepiling.etAllowScrolling(false, 'left', 'right');
+        // $.fn.pagepiling.setAllowScrolling(false, 'left', 'right');
     });
 
 
@@ -49,7 +49,7 @@
     if(window.innerWidth > 768){
         $('.episodios__tabs-item').removeClass('active');
     }
-    
+
     window.dispatchEvent(new Event('resize'));
 
 })();
