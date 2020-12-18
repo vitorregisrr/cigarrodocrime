@@ -51,6 +51,7 @@
         @media screen and (max-width: $bp-SM){
             height: calc(100vh - 110px);
             padding-bottom: 0;
+            align-items: flex-start;
         }
 
         .caption{

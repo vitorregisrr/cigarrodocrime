@@ -1184,6 +1184,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .sobre__content {
     padding-bottom: 40px;
+    justify-content: flex-start;
     padding-top: 60px;
   }
 }
@@ -2256,6 +2257,7 @@ textarea.form-control {
   .contrabando .content {
     height: calc(100vh - 110px);
     padding-bottom: 0;
+    align-items: flex-start;
   }
 }
 
