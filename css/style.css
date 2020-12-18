@@ -761,6 +761,13 @@ textarea.form-control {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .ep-modal .close {
+    height: 100px;
+    width: 120px;
+  }
+}
+
 .ep-modal .close img {
   width: 60px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -770,12 +777,10 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .ep-modal .close {
-    height: 30px;
-    width: 30px;
-    right: 21px;
-    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -794,11 +799,33 @@ textarea.form-control {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .ep-modal .body-spacing {
+    padding: 0;
+    padding-top: 6px;
+  }
+}
+
 .ep-modal .body {
   position: relative;
   border: 1px solid #E5432F;
   border-bottom: none;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body {
+    padding-top: 70px;
+    border-width: 1.6px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body {
+    border: none;
+    padding-left: 40px;
+  }
 }
 
 .ep-modal .body::after {
@@ -810,6 +837,25 @@ textarea.form-control {
   width: 72%;
   height: 100%;
   z-index: -1;
+}
+
+@media screen and (max-width: 1024px) {
+  .ep-modal .body::after {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body::after {
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body::after {
+    left: 0;
+    width: 100%;
+  }
 }
 
 .ep-modal .body .header {
@@ -825,11 +871,43 @@ textarea.form-control {
   min-width: 380px;
 }
 
+@media screen and (max-width: 1024px) {
+  .ep-modal .body .header {
+    padding-left: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body .header {
+    top: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body .header {
+    padding-left: 30px;
+    padding-right: 40px;
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body .header {
+    left: 0;
+  }
+}
+
 .ep-modal .body .header .title {
   font-size: 30px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .body .header .title {
+    font-size: 27px;
+  }
 }
 
 .ep-modal .body .header .title span {
@@ -845,6 +923,19 @@ textarea.form-control {
   font-family: 'Special Elite', cursive;
 }
 
+@media screen and (max-width: 1024px) {
+  .ep-modal .content {
+    padding-left: 105px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .content {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
 .ep-modal .content .title {
   font-size: 35px;
   max-width: 465px;
@@ -855,6 +946,12 @@ textarea.form-control {
   font-size: 20px;
   color: #646464;
   max-width: 490px;
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal .content .desc {
+    max-width: 312px !important;
+  }
 }
 
 .ep-modal__img {
@@ -880,6 +977,33 @@ textarea.form-control {
   .ep-modal__img {
     width: 90%;
     transform: translateX(-30px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ep-modal__img {
+    transform: none;
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1022px) and (min-height: 1360px) {
+  .ep-modal__img {
+    margin-top: 200px;
+    width: 85%;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ep-modal__img {
+    transform: none !important;
+    margin-top: 200px;
+    padding: 12px;
+    margin-left: 0;
+    width: 90%;
+    margin-bottom: 36px;
   }
 }
 
