@@ -21,8 +21,8 @@
 
         @media screen and (max-width: $bp-SM){
             padding-left: 30px;
-            height: calc(100vh - 120px) !important;
-            min-height: calc(100vh - 120px);
+            height: calc(100vh - 110px) !important;
+            min-height: calc(100vh - 110px);
         }
     }
     
@@ -59,7 +59,7 @@
             }
 
             @media screen and (max-width: $bp-SM){
-                width: 18px;
+                width: 20px;
             }
 
             @media screen and (max-width: $bp-SM) and (max-height: 800px){
