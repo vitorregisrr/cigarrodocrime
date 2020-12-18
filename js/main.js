@@ -42,7 +42,7 @@
 
 
     $('.episodios__tabs-item').click(function(){
-        $(this).siblings().removeClass('active');
+        $('.episodios__tabs-item').removeClass('active');
     });
 
     if(window.innerWidth > 768){
