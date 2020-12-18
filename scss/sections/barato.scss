@@ -4,10 +4,6 @@
     min-height: 100vh;
     background-color: #fff;
 
-    @media screen and (max-width: $bp-SM){
-        min-height: calc(100vh - 100px);
-    }
-
     &::after{
         content: '';
         position: absolute;
@@ -24,6 +20,7 @@
 
         @media screen and (max-width: $bp-SM){
             padding-left: 30px;
+            min-height: calc(100vh - 100px);
         }
     }
     

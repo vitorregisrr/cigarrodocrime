@@ -3362,12 +3362,6 @@ textarea.form-control {
   background-color: #fff;
 }
 
-@media screen and (max-width: 576px) {
-  .barato {
-    min-height: calc(100vh - 100px);
-  }
-}
-
 .barato::after {
   content: '';
   position: absolute;
@@ -3386,6 +3380,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .barato .container {
     padding-left: 30px;
+    min-height: calc(100vh - 100px);
   }
 }
 
