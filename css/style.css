@@ -1142,6 +1142,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .sobre .scroll {
+    bottom: 20px;
+  }
+}
+
 .sobre .scroll:hover {
   margin-bottom: 15px;
 }

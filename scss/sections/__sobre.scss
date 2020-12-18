@@ -21,6 +21,10 @@
             left: 40px;
         }
         
+        @media screen and (max-width: $bp-SM){
+            bottom: 20px;
+        }
+
         &:hover{
             margin-bottom: 15px;
         }
