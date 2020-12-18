@@ -723,13 +723,14 @@ textarea.form-control {
   top: 0;
   bottom: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: black;
   pointer-events: none;
   opacity: 0;
   z-index: 20;
   transition: all 0.4s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -793,7 +794,7 @@ textarea.form-control {
 }
 
 .ep-modal .body-spacing {
-  height: 100%;
+  min-height: 100vh;
   padding: 0 55px;
   padding-top: 45px;
   padding-bottom: 0;
@@ -811,6 +812,8 @@ textarea.form-control {
   border: 1px solid #E5432F;
   border-bottom: none;
   height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -921,6 +924,7 @@ textarea.form-control {
   padding-left: 140px;
   padding-top: 190px;
   font-family: 'Special Elite', cursive;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1024px) {
