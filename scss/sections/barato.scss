@@ -85,7 +85,7 @@
         }
 
         @media screen and (max-width: $bp-SM){
-            padding-bottom: 70px;
+            padding-bottom: 150px;
         }
 
         @media screen and (max-width: $bp-SM) and (max-height: 800px){
@@ -108,7 +108,8 @@
             @media screen and (max-width: $bp-SM) and (max-height: 800px){
                 font-size: 27px;
                 max-width: 280px;
-                padding-top: 30px;
+                padding-top: 0px;
+                margin-top: -50px;
             }
         }
         
