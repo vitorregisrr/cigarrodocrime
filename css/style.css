@@ -2464,7 +2464,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .ciclos {
     min-height: calc(100vh - 110px);
-    padding-bottom: 30px;
+    padding-bottom: 80px;
   }
 }
 
@@ -2541,7 +2541,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .ciclos .scroll {
     left: 15vw;
-    bottom: 40px;
+    bottom: 110px;
   }
 }
 
