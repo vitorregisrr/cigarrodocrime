@@ -3373,6 +3373,7 @@ textarea.form-control {
 }
 
 .barato .container {
+  position: relative;
   min-height: 100vh;
   padding-left: 70px;
 }
@@ -3380,6 +3381,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .barato .container {
     padding-left: 30px;
+    height: calc(100vh - 100px) !important;
     min-height: calc(100vh - 100px);
   }
 }
@@ -3547,6 +3549,7 @@ body {
   animation-fill-mode: forwards;
   opacity: .8;
   transition: opacity 0.4s;
+  transition: all 0.4s !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -3561,6 +3564,10 @@ body {
     opacity: 0 !important;
     display: none !important;
   }
+}
+
+#pp-nav.to-bottom {
+  top: 60%;
 }
 
 #pp-nav:hover {

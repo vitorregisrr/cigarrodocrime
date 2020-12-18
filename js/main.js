@@ -28,6 +28,13 @@
                         $(element).addClass(animation);
                     }, 20);
                 });
+            },
+            afterLoad: function(anchor, index){
+                if(index === 7){
+                    $('#pp-nav').addClass('to-bottom')
+                }else{
+                    $('#pp-nav').removeClass('to-bottom')
+                }
             }
         });
         $.fn.pagepiling.setAllowScrolling(true);
