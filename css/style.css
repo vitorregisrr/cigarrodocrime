@@ -3459,7 +3459,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .barato__body {
-    padding-bottom: 150px;
+    padding-bottom: 70px;
   }
 }
 
@@ -3481,7 +3481,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .barato__body .title {
     font-size: 33px;
-    padding-top: 90px;
+    padding-top: 30px;
   }
 }
 
