@@ -46,6 +46,9 @@
     $('.episodios__tabs-item').click(function(){
         $('.episodios__tabs-item').removeClass('active');
     });
+    $('.episodios__tabs-item').hover(function(){
+        $('.episodios__tabs-item').removeClass('active');
+    });
 
     if(window.innerWidth > 768){
         $('.episodios__tabs-item').removeClass('active');
