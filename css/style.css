@@ -1184,8 +1184,8 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .sobre__content {
     padding-bottom: 40px;
-    justify-content: flex-start;
-    padding-top: 60px;
+    align-items: flex-start;
+    padding-top: 80px;
   }
 }
 
@@ -1258,6 +1258,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .sobre__social {
     padding-left: 0;
+    margin-top: 10px;
   }
 }
 

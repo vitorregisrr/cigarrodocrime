@@ -56,8 +56,8 @@
 
         @media screen and (max-width: $bp-SM){
             padding-bottom: 40px;
-            justify-content: flex-start;
-            padding-top: 60px;
+            align-items: flex-start;
+            padding-top: 80px;
         }
        
         .caption {
@@ -118,6 +118,7 @@
 
         @media screen and (max-width: $bp-SM){
             padding-left: 0;
+            margin-top: 10px;
         }
 
         .item {
