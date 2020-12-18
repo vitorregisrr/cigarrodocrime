@@ -1854,7 +1854,7 @@ textarea.form-control {
 
 .episodios__tabs-item .body .more .arrows {
   position: absolute;
-  right: -25px;
+  right: -13px;
   top: 12px;
 }
 
@@ -1862,6 +1862,11 @@ textarea.form-control {
   width: 14px;
   transition: all 0.4s;
   filter: brightness(0) invert(1);
+}
+
+.episodios__tabs-item .body .more .arrows img:nth-child(1) {
+  position: absolute;
+  left: 0;
 }
 
 .episodios__tabs-item .body .more .arrows img:nth-child(2) {
@@ -2008,13 +2013,18 @@ textarea.form-control {
 
 .episodios__midia-item .more .arrows {
   position: absolute;
-  right: -30px;
+  right: -13px;
   top: 12px;
 }
 
 .episodios__midia-item .more .arrows img {
   width: 17px;
   transition: all 0.4s;
+}
+
+.episodios__midia-item .more .arrows img:nth-child(1) {
+  position: absolute;
+  left: 0;
 }
 
 .episodios__midia-item .more .arrows img:nth-child(2) {

@@ -298,13 +298,18 @@
     
                     .arrows {
                         position: absolute;
-                        right: -25px;
+                        right: -13px;
                         top: 12px;
     
                         img {
                             width: 14px;
                             transition: all 0.4s;
                             filter: brightness(0) invert(1);
+
+                            &:nth-child(1) {
+                                position: absolute;
+                                left: 0;
+                            }
 
                             &:nth-child(2) {
                                 position: absolute;
@@ -439,16 +444,23 @@
 
                 .arrows {
                     position: absolute;
-                    right: -30px;
+                    right: -13px;
                     top: 12px;
 
                     img {
                         width: 17px;
                         transition: all 0.4s;
+
+                        &:nth-child(1) {
+                            position: absolute;
+                            left: 0;
+                        }
+                        
                         &:nth-child(2) {
                             position: absolute;
                             left: 0;
                         }
+
                         &:nth-child(3) {
                             position: absolute;
                             left: 0;
