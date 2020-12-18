@@ -3143,6 +3143,7 @@ textarea.form-control {
   .crime__body {
     padding-bottom: 0px;
     padding-top: 60px;
+    justify-content: flex-start;
   }
 }
 
