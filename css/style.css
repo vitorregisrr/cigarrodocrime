@@ -2992,7 +2992,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .documentario__img {
-    width: 85%;
+    width: 90%;
     margin-left: -3%;
     padding: 10px;
   }
@@ -3007,8 +3007,15 @@ textarea.form-control {
   transform: scale(1.04);
 }
 
-.documentario__img img {
+.documentario__img img, .documentario__img iframe {
   width: 100%;
+  min-height: 275px;
+}
+
+@media screen and (max-width: 576px) {
+  .documentario__img img, .documentario__img iframe {
+    min-height: 200px;
+  }
 }
 
 .crime {

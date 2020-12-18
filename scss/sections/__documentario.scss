@@ -155,7 +155,7 @@
         }
 
         @media screen and (max-width: $bp-SM){
-            width: 85%;
+            width: 90%;
             margin-left: -3%;
             padding: 10px;
         }
@@ -165,8 +165,13 @@
             @include scale(1.04);
         }
 
-        img{
+        img, iframe{
             width: 100%;
+            min-height: 275px;
+
+            @media screen and (max-width: $bp-SM){
+                min-height: 200px;
+            }
         }
     }
 }
