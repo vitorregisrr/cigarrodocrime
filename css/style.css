@@ -955,6 +955,7 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .ep-modal .content .desc {
     max-width: 312px !important;
+    padding-bottom: 200px;
   }
 }
 
