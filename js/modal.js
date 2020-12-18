@@ -14,6 +14,7 @@
         $('.ep-modal .body-spacing').removeClass('animated')
         $('.ep-modal .body-spacing .img-anim').removeClass('fadeInRight')
         $('.ep-modal .body-spacing .img-anim ').removeClass('animated');
+        $(".ep-modal").animate({ scrollTop: 0 }, "fast");
 
         if(isActive){
             $('.ep-modal__img iframe').each(function(index, element) {

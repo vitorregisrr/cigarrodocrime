@@ -38,7 +38,7 @@
         startPosition: 0,
         animateOut: 'fadeOut',
         transitionStyle: "fade",
-        mouseDrag: false,
+        mouseDrag: true,
         autoHeight: true,
         animateIn: 'fadeIn',
         navContainer: '#ciclos-carousel-nav',
