@@ -6,6 +6,10 @@
         padding-bottom: 100px;
     }
 
+    @media screen and (max-width: $bp-SM){
+        min-height: calc(100vh - 110px);
+    }
+
     &::after{
         content: '';
         position: absolute;
