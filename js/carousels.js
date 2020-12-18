@@ -39,6 +39,7 @@
         animateOut: 'fadeOut',
         transitionStyle: "fade",
         mouseDrag: false,
+        autoHeight: true,
         animateIn: 'fadeIn',
         navContainer: '#ciclos-carousel-nav',
         navText: ['<img src="../images/ico/chevron-back.svg" alt="">','  <img src="../images/ico/chevron-next.svg" alt="">'],

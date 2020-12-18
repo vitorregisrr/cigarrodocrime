@@ -2466,14 +2466,14 @@ textarea.form-control {
   top: 388px;
   width: 100vw;
   height: 0.3px;
-  opacity: .4;
+  opacity: 0.4;
   background-color: #E5432F;
 }
 
 @media screen and (max-width: 1025px) {
   .ciclos::after {
     height: 1px;
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -2624,7 +2624,8 @@ textarea.form-control {
   }
 }
 
-.ciclos .body .custom-nav .owl-prev, .ciclos .body .custom-nav .owl-next {
+.ciclos .body .custom-nav .owl-next,
+.ciclos .body .custom-nav .owl-prev {
   background: none;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2634,7 +2635,8 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-.ciclos .body .custom-nav .owl-prev:hover, .ciclos .body .custom-nav .owl-next:hover {
+.ciclos .body .custom-nav .owl-next:hover,
+.ciclos .body .custom-nav .owl-prev:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -2642,7 +2644,8 @@ textarea.form-control {
   transform: scale(1.1);
 }
 
-.ciclos .body .custom-nav .owl-prev:focus, .ciclos .body .custom-nav .owl-next:focus {
+.ciclos .body .custom-nav .owl-next:focus,
+.ciclos .body .custom-nav .owl-prev:focus {
   outline: none;
 }
 
@@ -2716,6 +2719,18 @@ textarea.form-control {
   }
 }
 
+.ciclos__carousel-item .caption .title.lg {
+  margin-right: -70px;
+}
+
+@media screen and (max-width: 576px) {
+  .ciclos__carousel-item .caption .title.lg {
+    font-size: 34px;
+    max-width: 90%;
+    margin-right: 0;
+  }
+}
+
 .ciclos__carousel-item .caption .desc {
   font-size: 18px;
   color: #FFFFFF;
@@ -2767,6 +2782,19 @@ textarea.form-control {
   }
 }
 
+.ciclos__carousel-item .caption .number.lg {
+  margin-left: -9%;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .ciclos__carousel-item .caption .number.lg {
+    font-size: 43px;
+    left: -45px;
+    padding: 0 6px;
+  }
+}
+
 .ciclos__carousel-item .img {
   display: flex;
   align-items: center;
@@ -2794,7 +2822,8 @@ textarea.form-control {
 .ciclos__carousel-item .img img {
   position: absolute;
   right: 17px;
-  top: 0;
+  top: 50%;
+  transform: translateY(-60%);
   z-index: 8;
   width: 400px;
 }
@@ -2802,8 +2831,9 @@ textarea.form-control {
 @media screen and (max-width: 1025px) {
   .ciclos__carousel-item .img img {
     top: unset;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
+    transform: unset;
   }
 }
 
