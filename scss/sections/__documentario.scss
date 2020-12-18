@@ -47,6 +47,10 @@
         &:hover {
             bottom: 30px;
         }
+
+        @media screen and (min-width: 1024px) and (min-height: 1300px){
+            left: 40px;
+        }
         
         img {
             width: 20px;

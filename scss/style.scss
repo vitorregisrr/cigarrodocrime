@@ -44,6 +44,12 @@ body {
         opacity: 0 !important;
         display: none !important;
     }
+    
+    @media screen and (min-width: 1024px) and (min-height: 1300px){
+        opacity: 0 !important;
+        display: none !important;
+    }
+
 
     &:hover{
         opacity: 1;

@@ -2849,6 +2849,12 @@ textarea.form-control {
   bottom: 30px;
 }
 
+@media screen and (min-width: 1024px) and (min-height: 1300px) {
+  .documentario .scroll {
+    left: 40px;
+  }
+}
+
 .documentario .scroll img {
   width: 20px;
 }
@@ -3519,6 +3525,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #pp-nav {
+    opacity: 0 !important;
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1300px) {
   #pp-nav {
     opacity: 0 !important;
     display: none !important;
