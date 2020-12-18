@@ -3465,7 +3465,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .barato__body {
     padding-bottom: 0;
-    padding-top: 56px;
+    padding-top: 76px;
     justify-content: flex-start;
   }
 }
