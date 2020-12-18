@@ -1121,7 +1121,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .sobre {
-    padding-bottom: 100px;
+    min-height: calc(100vh - 110px);
   }
 }
 
@@ -1184,6 +1184,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .sobre__content {
     padding-bottom: 40px;
+    padding-top: 60px;
   }
 }
 
@@ -1191,6 +1192,12 @@ textarea.form-control {
   margin: 0 auto;
   max-width: 410px;
   padding-bottom: 70px;
+}
+
+@media screen and (max-width: 576px) {
+  .sobre__content .caption {
+    padding-bottom: 0;
+  }
 }
 
 .sobre__content .caption .content {
@@ -1214,7 +1221,6 @@ textarea.form-control {
   .sobre__content .caption .title {
     margin-left: -80px;
     margin-bottom: 30px;
-    padding-top: 20px;
     font-size: 43px;
   }
 }

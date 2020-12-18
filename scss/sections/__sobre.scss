@@ -4,7 +4,7 @@
     background-color: #fff;
 
     @media screen and (max-width: $bp-SM){
-        padding-bottom: 100px;
+        min-height: calc(100vh - 110px);
     }
 
     .container {
@@ -56,6 +56,7 @@
 
         @media screen and (max-width: $bp-SM){
             padding-bottom: 40px;
+            padding-top: 60px;
         }
        
         .caption {
@@ -63,7 +64,8 @@
             max-width: 410px;
             padding-bottom: 70px;
 
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: $bp-SM){
+                padding-bottom: 0;
             }
 
             .content{
@@ -83,7 +85,6 @@
                 @media screen and (max-width: $bp-SM){
                     margin-left: -80px;
                     margin-bottom: 30px;
-                    padding-top: 20px;
                     font-size: 43px;
                 }
             }
