@@ -38,7 +38,7 @@
                 }
             }
         });
-        $.fn.pagepiling.setAllowScrolling(false);
+        $.fn.pagepiling.etAllowScrolling(false, 'left', 'right');
     });
 
 
