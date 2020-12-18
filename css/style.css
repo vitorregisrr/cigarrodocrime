@@ -2711,7 +2711,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .ciclos__carousel-item .caption .title {
-    font-size: 34px;
+    font-size: 36px;
     padding-top: 16px;
   }
 }
@@ -2731,6 +2731,7 @@ textarea.form-control {
     font-size: 30px;
     max-width: 90%;
     margin-right: 0;
+    max-width: 200px;
   }
 }
 

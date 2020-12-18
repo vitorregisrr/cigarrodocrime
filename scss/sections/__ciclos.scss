@@ -195,7 +195,7 @@
                     max-width: 540px;
 
                     @media screen and (max-width: $bp-SM) {
-                        font-size: 34px;
+                        font-size: 36px;
                         padding-top: 16px;
                     }
 
@@ -210,6 +210,7 @@
                             font-size: 30px;
                             max-width: 90%;
                             margin-right: 0;
+                            max-width: 200px;
                         }
                     }
 
