@@ -17,6 +17,23 @@
         background-color: $color-primary;
     }
     
+    .textura {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 8;
+
+        pointer-events: none;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 99vw;
+            height: 100vh;
+        }
+    }
+    
     .container{
         min-height: 100vh;
         padding-left: 70px;

@@ -222,7 +222,7 @@
             width: 70%;
             margin-top: 30px;
         }
-
+        
         @media screen and (min-width: 1022px) and (min-height: 1360px){
             margin-top: 200px;
             width: 85%;
@@ -234,21 +234,28 @@
             margin-top: 200px;
             padding: 12px;
             margin-left: 0;
-            width: 90%;
+            width: 93%;
             margin-bottom: 36px;
         }
-
         
         &:hover{
             
-            img{
+            img, iframe{
                 @include scale(1.04);
             }
         }
         
-        img{
+        img, iframe{
             @include transition();
             width: 100%;
+        }
+
+        iframe{
+            min-height: 300px;
+
+            @media screen and (max-width: $bp-SM){
+                min-height: 270px;
+            }
         }
     }
 }

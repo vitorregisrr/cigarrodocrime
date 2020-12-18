@@ -36,8 +36,12 @@
 
     $('.episodios__tabs-item').click(function(){
         $(this).siblings().removeClass('active');
-    })
+    });
 
+    if(window.innerWidth > 768){
+        $('.episodios__tabs-item').removeClass('active');
+    }
+    
     window.dispatchEvent(new Event('resize'));
 
 })();
