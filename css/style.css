@@ -1854,8 +1854,6 @@ textarea.form-control {
 
 .episodios__tabs-item .body .more .arrows {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
   right: -25px;
   top: 12px;
 }
