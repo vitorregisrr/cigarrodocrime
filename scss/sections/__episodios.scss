@@ -331,13 +331,12 @@
         width: 100vw;
         max-width: 100vw;
         overflow-x: hidden;
-        height: 454px;
-
+        
         @media screen and (max-width: 768px){
             flex-direction: column;
             height: auto;
         }
-
+        
         .header {
             display: flex;
             justify-content: flex-end;
@@ -345,6 +344,7 @@
             background-color: $color-primary;
             width: 30%;
             height: 100%;
+            min-height: 524px;
 
             @media screen and (max-width: 768px){
                 width: 100%;
@@ -352,6 +352,7 @@
                 padding: 50px 0;
                 padding-bottom: 30px;
                 padding-left: 60px;
+                min-height: unset;
             }
 
             @media screen and (max-width: $bp-SM){
@@ -506,6 +507,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            flex-wrap: wrap;
             margin-top: 15px;
 
             @media screen and (max-width: 768px){
@@ -522,6 +524,7 @@
                     margin-right: 27px;
                     width: 11px;
                     height: 11px;
+                    margin-bottom: 10px;
                 }
             }
         }

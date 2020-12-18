@@ -6,7 +6,7 @@
         loop: true,
         margin: 0,
         items: 2,
-        autoHeight: true,
+        autoHeight: false,
         nav: true,
         dots: true,
         startPosition: 0,
