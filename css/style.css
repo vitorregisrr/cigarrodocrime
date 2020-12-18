@@ -3142,7 +3142,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .crime__body {
     padding-bottom: 0px;
-    padding-top: 60px;
+    padding-top: 80px;
     justify-content: flex-start;
   }
 }
