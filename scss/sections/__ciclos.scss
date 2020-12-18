@@ -3,11 +3,8 @@
     min-height: 100vh;
 
     @media screen and (max-width: $bp-SM){
-        padding-bottom: 100px;
-    }
-
-    @media screen and (max-width: $bp-SM){
         min-height: calc(100vh - 110px);
+        padding-bottom: 150px;
     }
 
     &::after{
