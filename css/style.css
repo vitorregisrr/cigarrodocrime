@@ -3287,6 +3287,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .numeros .scroll {
     right: 44px;
+    bottom: 23px;
   }
 }
 
