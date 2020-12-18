@@ -2185,7 +2185,7 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .contrabando {
-    padding-bottom: 100px;
+    min-height: calc(100vh - 110px);
   }
 }
 
@@ -2246,13 +2246,20 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .contrabando .content {
+    height: calc(100vh - 110px);
+    padding-bottom: 0;
+  }
+}
+
 .contrabando .content .caption {
   position: relative;
 }
 
 @media screen and (max-width: 576px) {
   .contrabando .content .caption {
-    padding-top: 200px;
+    padding-top: 70px;
   }
 }
 
