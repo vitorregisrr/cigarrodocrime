@@ -40,6 +40,7 @@
 
         @media screen and (max-width: $bp-SM){
             right: 40px;
+            bottom: 13px;
         }
 
         @media screen and (max-width: $bp-SM) and (max-height: 800px){
@@ -59,7 +60,7 @@
             }
 
             @media screen and (max-width: $bp-SM){
-                width: 18px;
+                width: 16px;
             }
 
             @media screen and (max-width: $bp-SM) and (max-height: 800px){
@@ -85,12 +86,11 @@
         }
 
         @media screen and (max-width: $bp-SM){
-            padding-bottom: 150px;
+            padding-bottom: 0;
+            padding-top: 36px;
+            justify-content: flex-start;
         }
 
-        @media screen and (max-width: $bp-SM) and (max-height: 800px){
-            padding-bottom: 50px;
-        }
 
         .title{
             font-size: 50px;
