@@ -33,7 +33,6 @@
                 'menu-faq',
                 'menu-sobre'
             ],
-            touchSensitivity: 1000,
             onLeave: function (anchorLink, index) {
                 $(`#pagepiling > .section:nth-child(${index}) .has-animation`)
                     .each(function (index, element) {
