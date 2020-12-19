@@ -2805,8 +2805,8 @@ textarea.form-control {
 
 @media screen and (max-width: 576px) {
   .ciclos__carousel-item .caption .number.lg {
-    font-size: 40px;
-    left: -45px;
+    font-size: 37px;
+    left: -42px;
     padding: 0px;
   }
 }
