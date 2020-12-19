@@ -813,7 +813,7 @@
                     if (Math.abs(touchStartX - touchEndX) > (Math.abs(touchStartY - touchEndY))) {
                         
                     } else {
-                        if (Math.abs(touchStartY - touchEndY) > (container.height() / 100 * 4)) {
+                        if (Math.abs(touchStartY - touchEndY) > (container.height() / 100 * 5)) {
                             if (touchStartY > touchEndY) {
                                 scrolling('down', scrollable);
                             } else if (touchEndY > touchStartY) {

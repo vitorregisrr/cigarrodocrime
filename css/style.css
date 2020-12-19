@@ -1530,6 +1530,12 @@ textarea.form-control {
   font-family: 'Special Elite', cursive;
 }
 
+@media screen and (max-width: 992px) {
+  .faq .tab-2 .faq__item:first-child {
+    border-top: none;
+  }
+}
+
 .animated {
   animation-duration: 2s !important;
 }
@@ -2800,8 +2806,8 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .ciclos__carousel-item .caption .number.lg {
     font-size: 43px;
-    left: -60px;
-    padding: 0 6px;
+    left: -53px;
+    padding: 0px;
   }
 }
 

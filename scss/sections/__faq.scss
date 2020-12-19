@@ -198,6 +198,14 @@
             font-family: 'Special Elite', cursive;
         }
     }
+
+    .tab-2{
+        @media screen and (max-width: $bp-LG){
+            .faq__item:first-child{
+                border-top: none;
+            }
+        }
+    }
 }
 
 
