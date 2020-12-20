@@ -1068,15 +1068,15 @@ textarea.form-control {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .home .scroll {
-    left: 38%;
-  }
-}
-
 @media screen and (max-width: 769px) and (min-height: 1023px) {
   .home .scroll {
     left: 49.7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home .scroll {
+    left: 38%;
   }
 }
 
