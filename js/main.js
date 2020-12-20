@@ -21,7 +21,7 @@
                 '#fff'
             ],
             scrollBar: true,
-            touchSensivity: 10,
+            touchSensivity: 1,
             anchors: [
                 'menu-home',
                 'menu-barato',
