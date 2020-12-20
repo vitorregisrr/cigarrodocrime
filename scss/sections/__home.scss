@@ -21,6 +21,10 @@
             left: 38%;
         }
 
+        @media screen and (max-width: 769px) and (min-height: 1023px){
+            left: 49.7%;
+        }
+
         &:hover {
             bottom: 30px;
         }
